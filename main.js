@@ -25,14 +25,14 @@ function oi() {
     const FRA = document.getElementById('FRA').checked;// m4
     const Fi = document.getElementById('Fi').checked;// m1
     const FiA = document.getElementById('FiA').checked; // m2
-    var  vida = document.getElementById('entrada').value;
+    let  vida = document.getElementById('entrada').value;
     const busca = ',';
     const busca2 = ' ';
     const strbusca = eval('/'+busca+'/g');
     const strbusca2 = eval('/'+busca2+'/g'); 
-    var vida = vida.replace(strbusca,'.')							
-    var vida = vida.replace(strbusca2,'')				
-    const entrada = vida.split(';');
+    let outro = vida.replace(strbusca,'.')							
+    var outro2 = outro.replace(strbusca2,'')				
+    const entrada = outro2.split(';');
     const max = entrada.reduce(function(a, b) {
         return Math.max(a, b);
     });
