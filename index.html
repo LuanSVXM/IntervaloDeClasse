@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela</title>
+	<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+ <h1>Tabela</h1>
+<div>
+    <input type="text" placeholder="Cabeçalho" id="cb">
+    <input type="text" placeholder="Dados, separar por ; " id="entrada">
+    <input type="text" placeholder="Titulo" id="titulo">
+    <input type="text" placeholder="Fonte" id="fonte">
+</div>
+<br><br>
+ <fieldset id="tb">
+     <legend>Atributos da Tabela</legend>
+     <div>
+         <input type="checkbox" id="FR">
+         <label>Frequencia Relativa</label>
+     </div>
+     <div>
+         <input type="checkbox" id="FRA">
+         <label>Frequencia Relativa Acumulada</label>
+     </div>
+     <div>
+         <input type="checkbox" id="Fi">
+         <label>Frequencia Absoluta</label>
+     </div>
+     <div>
+         <input type="checkbox" id="FiA">
+         <label>Frequencia Absoluta Acumulada</label>
+     </div>
+ </fieldset>
+ <br>
+ <button id="comecar">Gerar Tabela</button>
+<div id="conteiner">
+	<table id="tabela">
+	</table>
+</div>
+<script src="main.js" type="text/javascript" ></script>
+</body>
+</html>
